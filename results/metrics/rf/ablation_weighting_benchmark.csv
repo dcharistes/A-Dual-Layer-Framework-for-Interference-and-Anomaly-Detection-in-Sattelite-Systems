@@ -1,0 +1,11 @@
+experiment,n_seg_entropy,n_seg_triangular,segments_identical,cuc_flags_identical,entropy_TP,entropy_FA,triangular_TP,triangular_FA
+E01_baseline,12,12,yes,yes,2,0,2,0
+E02_dense_narrowband,16,16,yes,yes,0,0,0,0
+E03_sparse_wideband,4,4,yes,yes,1,0,1,0
+E04_uniform_control,8,8,yes,yes,0,0,0,0
+E05_extreme_power_spread,7,7,yes,yes,1,0,1,0
+E06_deep_cuc,3,3,yes,yes,0,0,0,0
+E07_wide_cuc,5,5,yes,yes,0,0,0,0
+E08_multi_cuc,6,6,yes,yes,2,0,2,0
+E09_strong_tilt_offset,12,12,yes,yes,1,0,1,0
+E10_clean_complex,12,12,yes,yes,0,0,0,0

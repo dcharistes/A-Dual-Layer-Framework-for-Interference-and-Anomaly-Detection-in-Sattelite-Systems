@@ -1,0 +1,11 @@
+experiment,n_cucs,snapshot_TP,snapshot_FP,temporal_TP,temporal_FN,temporal_FP,has_baseline,temporal_N=2048
+E01_baseline,2,2,0,2,0,0,1,2048
+E02_dense_narrowband,1,0,0,1,0,0,1,2048
+E03_sparse_wideband,1,1,0,1,0,0,1,2048
+E04_uniform_control,1,0,0,1,0,0,1,2048
+E05_extreme_power_spread,1,1,0,1,0,0,1,2048
+E06_deep_cuc,1,0,0,1,0,0,1,2048
+E07_wide_cuc,1,0,0,1,0,0,1,2048
+E08_multi_cuc,3,2,0,3,0,0,1,2048
+E09_strong_tilt_offset,1,1,0,1,0,0,1,2048
+E10_clean_complex,0,0,0,0,0,0,1,2048

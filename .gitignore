@@ -1,0 +1,11 @@
+.env
+/data
+/src/__pycache__
+__pycache__/
+thesis_dataset_cuc_anomaly.dat
+/ref_docs
+/thesis/build/
+.claude
+.vscode
+/markitdown
+/scripts

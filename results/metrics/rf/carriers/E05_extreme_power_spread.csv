@@ -1,0 +1,8 @@
+fc_mhz,bw_mhz,start_mhz,end_mhz,variance,flagged,bump_freq_mhz,classification,nearest_truth_fc_mhz,nearest_truth_is_cuc
+-16.135,1.099,-16.684,-15.585,1.007,0,,authorized,-16.000,0
+-11.151,2.393,-12.348,-9.955,0.425,0,,authorized,-11.000,0
+-6.146,1.094,-6.693,-5.599,1.280,0,,authorized,-6.000,0
+-2.075,0.523,-2.337,-1.814,1.388,0,,authorized,-2.000,0
+1.868,1.084,1.326,2.410,0.856,0,,authorized,2.000,0
+6.856,2.388,5.662,8.050,0.329,0,,authorized,7.000,0
+12.843,3.804,10.941,14.745,0.429,1,12.929,CUC_detected_TP,13.000,0

@@ -1,0 +1,9 @@
+subset,method,pw_F1,pa_F1,source
+ALL,KSVD-ADMM,0.522,0.786,this work
+ALL,PCA,0.437,0.841,this work
+SMAP,KSVD-ADMM,0.532,0.785,this work
+SMAP,PCA,0.443,0.845,this work
+SMAP,LSTM-NDT (publ.),,0.89,Su et al. 2019 (point-adjusted)
+MSL,KSVD-ADMM,0.458,0.788,this work
+MSL,PCA,0.397,0.814,this work
+MSL,LSTM-NDT (publ.),,0.564,Su et al. 2019 (point-adjusted)
