@@ -1,9 +1,13 @@
-# Interference and Anomaly Detection System for FDMA Satellite Communications
+# A Dual-Layer Framework for Interference and Anomaly Detection in Satellite Systems
 
 ## Overview
 
-This repository contains the code, data, and documentation for my diploma thesis,
-which develops a **dual-domain detection system** for Frequency Division Multiple
+This repository contains the code, results, and documentation for my diploma thesis
+(University of Western Macedonia, Department of Electrical and Computer Engineering).
+The full thesis is in
+[`docs/A_Dual_Layer_Interference_Detection_System_for_Sattelite_Communications_thesis.pdf`](docs/A_Dual_Layer_Interference_Detection_System_for_Sattelite_Communications_thesis.pdf).
+
+The thesis develops a **dual-domain detection system** for Frequency Division Multiple
 Access (FDMA) satellite communication networks. A satellite mission can fail from
 two directions at once: **from outside**, when an interfering RF emission corrupts
 the communication link, and **from inside**, when a subsystem fault shows up as
@@ -44,16 +48,16 @@ detector in this thesis is the same five-step pipeline:
 * **Layer 1 (10-scenario benchmark, 12 CUC events):** snapshot wavelet detector
   alone: 7/12 detected, 0 false positives (conservative preset). Adding the
   temporal baseline-differencing stage: **12/12 detected, 0 false positives**
-  (N=2048 frames, 0.20 dB margin), CUC localisation within 0.02–0.13 MHz.
+  (N=2048 frames, 0.20 dB margin), CUC localisation within 0.002–0.066 MHz.
   Caveat that travels with the number: the temporal stage needs a clean baseline
-  twin and flags *any* added power, so the baseline must track the authorized
+  twin and flags *any* added power, so the baseline must track the authorised
   carrier plan.
 * **Layer 2 (SMAP/MSL, 81 channels):** K-SVD-ADMM vs. controlled PCA baseline —
   point-wise F1 **0.522 vs 0.437** (sparse wins: better localisation, lower FPR);
   point-adjusted F1 0.786 vs **0.841** (PCA wins: broad firing + inflation-prone
   metric). Published LSTM-NDT (different protocol, context only): SMAP 0.89 /
-  MSL 0.564 point-adjusted; our methods are in the published band on SMAP and
-  above LSTM-NDT on MSL.
+  MSL 0.564 point-adjusted; both methods are below LSTM-NDT on SMAP (0.785 and
+  0.845) and above it on MSL (0.788 and 0.814).
 
 ## Running
 

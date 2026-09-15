@@ -18,7 +18,7 @@ carrier*, which means the band must first be **segmented into carriers**, and
 each carrier judged against its own statistics.
 
 The threat model makes it harder still. A CUC interferer transmits *underneath*
-an authorized carrier: same centre region, narrower bandwidth, less power. It
+an authorised carrier: same centre region, narrower bandwidth, less power. It
 creates **no new spectral edge** and **no guard-band energy** — the two things
 segmentation can see — so it is invisible to segmentation by construction. Its
 only signature is a small localised **bump in power density** on the host
@@ -88,8 +88,8 @@ simplest possible normality model — one fixed template:
   that sets the sensitivity floor.
 
 **Result: 12/12 CUCs, 0 false positives** (N=2048 frames), localisation within
-0.02–0.13 MHz. Robustness measured by `studies/baseline_stress.py`: tolerates
->4 dB gain error, ~2 dB tilt, >50 kHz frequency drift between baseline and
+0.002–0.066 MHz. Robustness measured by `studies/baseline_stress.py`: tolerates
+>4 dB gain error, tilt through the full 6 dB tested, >50 kHz frequency drift between baseline and
 capture (the align+detrend step buys the drift tolerance; raw differencing
 broke at 2 kHz).
 
@@ -106,9 +106,9 @@ baseline.
 
 **Honest caveats that travel with the numbers:** the temporal stage needs a
 clean baseline twin (operationally: a commissioning capture, refreshed when the
-carrier plan changes), and it flags *any* added power — an authorized carrier
+carrier plan changes), and it flags *any* added power — an authorised carrier
 that is new or ~0.2 dB stronger than the baseline is flagged too. That is a
-feature for a monitoring system (the baseline must track the authorized plan),
+feature for a monitoring system (the baseline must track the authorised plan),
 but it must be stated.
 
 ## Two layers, one scoreboard

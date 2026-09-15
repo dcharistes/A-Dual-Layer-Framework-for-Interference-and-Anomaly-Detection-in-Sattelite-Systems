@@ -220,8 +220,8 @@ claim (CFAR = the non-periodic generalisation of the periodic EWMA).
   *Result (micro-avg):* K-SVD-ADMM wins **point-wise** (F1 0.522 vs 0.437,
   higher precision, lower FPR -> tighter localisation); PCA wins
   **point-adjusted** (F1 0.841 vs 0.786) by firing broadly and collecting
-  whole-segment credit. Per spacecraft, both methods sit in the published band
-  on SMAP and above LSTM-NDT on MSL (LSTM-NDT: 0.89 SMAP / 0.564 MSL,
+  whole-segment credit. Per spacecraft, both methods fall below LSTM-NDT on SMAP
+  and above it on MSL (LSTM-NDT: 0.89 SMAP / 0.564 MSL,
   point-adjusted, protocol differs — context only).
   *Takeaway:* the sparse model buys localisation precision, not raw coverage,
   and the **scoring metric decides the apparent winner** — which is why both
