@@ -2,9 +2,8 @@
 
 ## Overview
 
-This repository contains the code, results, and documentation for my diploma thesis
-(University of Western Macedonia, Department of Electrical and Computer Engineering).
-The full thesis is in
+This repository contains the code, results, and documentation for my diploma thesis.
+The thesis directory is:
 [`docs/A_Dual_Layer_Interference_Detection_System_for_Sattelite_Communications_thesis.pdf`](docs/A_Dual_Layer_Interference_Detection_System_for_Sattelite_Communications_thesis.pdf).
 
 The thesis develops a **dual-domain detection system** for Frequency Division Multiple
