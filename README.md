@@ -3,8 +3,8 @@
 ## Overview
 
 This repository contains the code, results, and documentation for my diploma thesis.
-The thesis directory is:
-[`docs/A_Dual_Layer_Interference_Detection_System_for_Sattelite_Communications_thesis.pdf`](docs/A_Dual_Layer_Interference_Detection_System_for_Sattelite_Communications_thesis.pdf).
+The thesis itself is at
+[`docs/A_Dual_Layer_Framework_for_Interference_and_Anomaly_Detection_in_Satellite_Systems.pdf`](docs/A_Dual_Layer_Framework_for_Interference_and_Anomaly_Detection_in_Satellite_Systems.pdf).
 
 The thesis develops a **dual-domain detection system** for Frequency Division Multiple
 Access (FDMA) satellite communication networks. A satellite mission can fail from
@@ -56,7 +56,14 @@ detector in this thesis is the same five-step pipeline:
   point-adjusted F1 0.786 vs **0.841** (PCA wins: broad firing + inflation-prone
   metric). Published LSTM-NDT (different protocol, context only): SMAP 0.89 /
   MSL 0.564 point-adjusted; both methods are below LSTM-NDT on SMAP (0.785 and
-  0.845) and above it on MSL (0.788 and 0.814).
+  0.845) and above it on MSL (0.788 and 0.814). The protocol difference favours
+  the methods here: LSTM-NDT sets its threshold without labels, while these
+  figures use a per-channel threshold tuned against them.
+* **How to read the Layer 2 numbers:** 16 of the 81 channels have a constant
+  training split, so no model can be learned on them and both detectors reduce to
+  distance from that constant. Over the 65 channels where a model exists,
+  point-wise F1 is 0.422 vs 0.308, and the margin for the sparse model widens
+  from 0.085 to 0.114.
 
 ## Running
 
